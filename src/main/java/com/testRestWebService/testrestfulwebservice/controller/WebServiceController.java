@@ -65,6 +65,9 @@ public class WebServiceController {
     private HomeConvertorService homeConvertorService;
 
 
+    public WebServiceController() {
+    }
+
 
 
     @RequestMapping(method=RequestMethod.POST, path = "")
@@ -117,5 +120,35 @@ public class WebServiceController {
     }
 
 
+    public HomePageRequestParserService getHomePageRequestParserService() {
+        return homePageRequestParserService;
+    }
 
+    public void setHomePageRequestParserService(HomePageRequestParserService homePageRequestParserService) {
+        this.homePageRequestParserService = homePageRequestParserService;
+    }
+
+    public HomePageService getHomePageService() {
+        return homePageService;
+    }
+
+    public void setHomePageService(HomePageService homePageService) {
+        this.homePageService = homePageService;
+    }
+
+    public HomePageRequestResponseRecordService getHomePageRequestResponseRecordService() {
+        return homePageRequestResponseRecordService;
+    }
+
+    public void setHomePageRequestResponseRecordService(HomePageRequestResponseRecordService homePageRequestResponseRecordService) {
+        this.homePageRequestResponseRecordService = homePageRequestResponseRecordService;
+    }
+
+    public HomeConvertorService getHomeConvertorService() {
+        return homeConvertorService;
+    }
+
+    public void setHomeConvertorService(HomeConvertorService homeConvertorService) {
+        this.homeConvertorService = homeConvertorService;
+    }
 }
